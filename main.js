@@ -32,7 +32,7 @@ async function fetchPokemonData(pokemonID) {
     pokemonCard.classList.add("pokemonCard")
     pokemonCard.innerHTML =`
     <h3>${pokemon.name}</h3>
-     <img src=${pokemon.sprites.front_default} alt="${pokemon.name}">
+     <img class="icono" src=${pokemon.sprites.front_default} alt="${pokemon.name}">
      `
     pokemonCard.addEventListener ("click", ()=>showPokemonDetail(pokemon))
     pokemonList.appendChild(pokemonCard)
